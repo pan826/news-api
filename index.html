@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFN News Inida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="logoname.webp" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                <li class="hover-link nav-item" id="home" onclick="reload()">Home</li>
+                <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="hover-link nav-item" id="innovation" onclick="onNavItemClick('innovation')">Innovation</li>
+                <li class="hover-link nav-item" id="culture" onclick="onNavItemClick('culture')">Culture</li>
+                <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+            </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+    <div class="cards-container container flex" id="cards-container">
+    
+    </div>
+
+
+</main>
+<!--- card-->
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="gettyimages.jpg" alt="news" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the title</h3>
+            <h6 id="news-source">End Gedget 16/08/2024</h6>
+            <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nulla voluptate labore itaque exercitationem minima sequi ipsa odit molestias quisquam!</p>
+
+        </div>
+     </div>
+
+</template>
+
+<!---footer-->
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>Stay Informed with Roy Future News</h2>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links:</h3>
+      
+        <ul>
+          <li class="hover-link nav-item" id="home" onclick="reload()"><a href="#">Home</a></li>
+          <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')"><a href="#">Politics</a></li>
+          <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')"><a href="#">Business</a></li>
+          <li class="hover-link nav-item" id="innovation" onclick="onNavItemClick('innovation')"><a href="#">Tech</a></li>
+          <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')"><a href="#">Sports</a></li>
+          <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')"><a href="#">Entertainment</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to Our Newsletter:</h3>
+        <p>Stay updated with the latest news delivered straight to your inbox.</p>
+        <button id="subscribe-button">Subscribe</button>
+      </div>
+      <div class="footer-section">
+        <h3>Connect with Us:</h3>
+        <div class="social-icons">
+            <i class="bi bi-instagram"></i>
+          <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+          <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+          <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+          <a href="#"><i id="linkidin" class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i id="yourtube" class="fab fa-youtube"></i></a>
+        </div>
+        
+        <div id="google_element"></div>
+
+
+      </div>
+      <div class="footer-section">
+        <h3>Legal:</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us:</h3>
+        <p>Email: <a href="proy17869@gmial.com">proy17869@gmial.com</a></p>
+        <p>Phone: 9608664032</p>
+        <p>Address: 847234 salempur pandaul, madhubani, Bihar, Inida</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 [Roy Future News]. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+<script  src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+  <script src="scrip.js"></script>
+  
+</html>
